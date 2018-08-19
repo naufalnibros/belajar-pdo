@@ -5,7 +5,8 @@ $id = $_GET['id'] !== "" ? $_GET['id'] : FALSE;
 
 $data    = $conn->query("SELECT * FROM m_kelas WHERE id = {$id}");
 $result  = $data->fetch(PDO::FETCH_OBJ);
-// var_dump($result);
+// var_dump($result->nama);
+// die();
 
 ?>
 <!DOCTYPE html>
